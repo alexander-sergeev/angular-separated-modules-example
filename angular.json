@@ -17,6 +17,10 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./custom-webpack.config.js",
+              "replaceDuplicatePlugins": true
+            },
             "outputPath": "dist/angular-separated-modules-example",
             "index": "src/index.html",
             "main": "src/main.ts",
